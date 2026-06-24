@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 40" role="img" aria-label="Burby Ventures">
+  <path d="M2 31 L13 11 L20 21 L25 14 L34 31 Z" fill="#ffffff"/>
+  <path d="M23 31 L32 16 L41 31 Z" fill="#ffffff" opacity="0.62"/>
+  <text x="52" y="28" font-family="Georgia, 'Times New Roman', serif" font-size="21" letter-spacing="0.4" fill="#ffffff">Burby Ventures</text>
+</svg>
