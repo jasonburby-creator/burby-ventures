@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { Ridge } from '../components/Art';
+import { MEDIA } from '../media';
 
 export const metadata: Metadata = {
   title: 'Results',
@@ -25,25 +26,31 @@ export default function Testimonials() {
             <div className="quote">
               <p>&ldquo;I can truly say our work has changed my ability to shine as a leader.&rdquo;</p>
               <div className="by">
-                Kristina <small>· add title + company</small>
+                <span>Kristina <small>· add title + company</small></span>
               </div>
             </div>
             <div className="quote">
               <p>&ldquo;Through Jason&rsquo;s guidance I&rsquo;ve become a more effective leader, more true to self, and live each day more energized, grounded and complete.&rdquo;</p>
               <div className="by">
-                Thomas <small>· add title + company</small>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img className="av" src={MEDIA.thomas} alt="" />
+                <span>Thomas <small>· add title + company</small></span>
               </div>
             </div>
             <div className="quote">
               <p>&ldquo;Jason has helped me overcome the roadblocks between me and my next levels of growth and success. He asks questions that draw out the answers inside of me &mdash; answers I often have a hard time articulating on my own.&rdquo;</p>
               <div className="by">
-                Chelsea <small>· add title + company</small>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img className="av" src={MEDIA.chelsea} alt="" />
+                <span>Chelsea <small>· add title + company</small></span>
               </div>
             </div>
             <div className="quote">
               <p>&ldquo;Jason has helped me grow and pushed me beyond my comfort zone. I am a better executive as a result of working with him &mdash; a better leader and a better man.&rdquo;</p>
               <div className="by">
-                Harris <small>· add title + company</small>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img className="av" src={MEDIA.harris} alt="" />
+                <span>Harris <small>· add title + company</small></span>
               </div>
             </div>
             <div className="quote slot">

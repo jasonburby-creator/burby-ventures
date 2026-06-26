@@ -62,8 +62,15 @@ versions; Vercel redeploys on every commit.
   three dashed placeholder slots. Replace the slots and add titles/companies.
 - **Booking + contact** — the buttons on `/contact` point at your existing
   Squarespace booking and contact pages. Swap in whatever you want long-term.
-- **Photo** — there's no portrait yet; adding a real photo of you is the single
-  highest-value addition.
+- **Photography & video** — the hero background, your portrait, the trees shot,
+  and the testimonial headshots are bundled locally in `public/media/` and
+  referenced from `app/media.ts`. Nothing depends on Squarespace anymore. To swap
+  any image, replace the file in `public/media/` (keep the filename) or edit the
+  path in `app/media.ts`. If you want the actual background **video**, drop the
+  `.mp4` into `public/` and ask me to wire up a `<video>` hero.
+- **Photo** — the portrait band on the homepage now uses your real `ZAW_1324`
+  photo. Swap in a different shot anytime by changing `portrait` in
+  `app/media.ts`.
 
 ## Run it locally (optional)
 
