@@ -6,8 +6,17 @@ export default function Home() {
   return (
     <>
       <header className="hero">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="hero-bg" src={MEDIA.heroBg} alt="" aria-hidden="true" />
+        <video
+          className="hero-bg"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/hero-poster.png"
+          aria-hidden="true"
+        >
+          <source src="/hero.mp4" type="video/mp4" />
+        </video>
         <div className="hero-overlay" />
         <div className="wrap">
           <div className="hero-copy reveal">
